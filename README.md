@@ -1,136 +1,92 @@
-# Eliza 🤖
+# LARP Detector Agent
 
-<div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
-</div>
+An AI agent specialized in detecting and analyzing LARPing (Live Action Role-Playing) behavior in online conversations. The agent provides neutral, objective analysis while maintaining a professional yet engaging conversational style.
 
-<div align="center">
+## Features
 
-  📖 [Documentation](https://ai16z.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
+- Specialized in detecting patterns of role-playing and fictional personas
+- Maintains neutrality while providing insightful analysis
+- Integrates with X (Twitter)
+- Powered by Claude Vertex for advanced analysis
+- Natural, conversational interaction style
 
-</div>
+## Quick Start
 
-## 🌍 README Translations
-
-[中文说明](./README_CN.md) | [日本語の説明](./README_JA.md) | [한국어 설명](./README_KOR.md) | [Français](./README_FR.md) | [Português](./README_PTBR.md) | [Türkçe](./README_TR.md) | [Русский](./README_RU.md) | [Español](./README_ES.md) | [Italiano](./README_IT.md) | [ไทย](./README_TH.md) | [Deutsch](./README_DE.md)
-
-## ✨ Features
-
--   🛠️ Full-featured Discord, Twitter and Telegram connectors
--   🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, etc.)
--   👥 Multi-agent and room support
--   📚 Easily ingest and interact with your documents
--   💾 Retrievable memory and document store
--   🚀 Highly extensible - create your own actions and clients
--   ☁️ Supports many models (local Llama, OpenAI, Anthropic, Groq, etc.)
--   📦 Just works!
-
-## Video Tutorials
-[AI Agent Dev School](https://www.youtube.com/watch?v=ArptLpQiKfI&list=PLx5pnFXdPTRzWla0RaOxALTSTnVq53fKL)
-
-## 🎯 Use Cases
-
--   🤖 Chatbots
--   🕵️ Autonomous Agents
--   📈 Business Process Handling
--   🎮 Video Game NPCs
--   🧠 Trading
-
-## 🚀 Quick Start
-
-### Prerequisites
-
--   [Python 2.7+](https://www.python.org/downloads/)
--   [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
--   [pnpm](https://pnpm.io/installation)
-
-> **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) is required.
-
-### Use the Starter (Recommended)
+After cloning the repository:
 
 ```bash
-git clone https://github.com/ai16z/eliza-starter.git
-
-cp .env.example .env
-
-pnpm i && pnpm build && pnpm start
-```
-
-Then read the [Documentation](https://ai16z.github.io/eliza/) to learn how to customize your Eliza.
-
-### Manually Start Eliza (Only recommended if you know what you are doing)
-
-```bash
-# Clone the repository
-git clone https://github.com/ai16z/eliza.git
-
-# Checkout the latest release
-# This project iterates fast, so we recommend checking out the latest release
-git checkout $(git describe --tags --abbrev=0)
-```
-
-### Start Eliza with Gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ai16z/eliza/tree/main)
-
-### Edit the .env file
-
-Copy .env.example to .env and fill in the appropriate values.
-
-```
-cp .env.example .env
-```
-
-Note: .env is optional. If your planning to run multiple distinct agents, you can pass secrets through the character JSON
-
-### Automatically Start Eliza
-
-This will run everything to setup the project and start the bot with the default character.
-
-```bash
-sh scripts/start.sh
-```
-
-### Edit the character file
-
-1. Open `packages/core/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
-
-2. To load custom characters:
-    - Use `pnpm start --characters="path/to/your/character.json"`
-    - Multiple character files can be loaded simultaneously
-3. Connect with X (Twitter)
-    - change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X
-
-### Manually Start Eliza
-
-```bash
-pnpm i
 pnpm build
 pnpm start
-
-# The project iterates fast, sometimes you need to clean the project if you are coming back to the project
-pnpm clean
 ```
 
-#### Additional Requirements
+## Agent Capabilities
 
-You may need to install Sharp. If you see an error when starting up, try installing it with the following command:
+The LARP Detector Agent excels at:
 
-```
-pnpm install --include=optional sharp
-```
+- Identifying patterns of role-playing in text
+- Providing constructive feedback on LARPing behavior
+- Maintaining neutral and analytical conversation
+- Using subtle humor to keep interactions engaging
+- Asking clarifying questions to verify claim authenticity
 
-### Community & contact
+## Communication Style
 
--   [GitHub Issues](https://github.com/ai16z/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
--   [Discord](https://discord.gg/ai16z). Best for: sharing your applications and hanging out with the community.
+The agent follows specific guidelines for interaction:
 
-## Contributors
+- Professional yet conversational tone
+- Avoids clichés and marketing language
+- Uses natural language patterns
+- Maintains clarity while being engaging
+- Incorporates appropriate technical context
+- Balances analysis with accessibility
 
-<a href="https://github.com/ai16z/eliza/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ai16z/eliza" />
-</a>
+## Response Guidelines
 
-## Star History
+The agent's responses are crafted to be:
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ai16z/eliza&type=Date)](https://star-history.com/#ai16z/eliza&Date)
+- Clear and direct
+- Free of emojis and hashtags
+- Analytically focused
+- Neutral in tone
+- Constructive in feedback
+- Engaging without being overly casual
+
+## Key Features
+
+### Detection Guidelines
+- Pattern recognition in conversational text
+- Authentication of claims through strategic questioning
+- Non-confrontational analytical approach
+- Balanced feedback delivery
+
+### Content Enhancement
+- Industry-specific references when relevant
+- Natural language variations
+- Mixed sentence structures
+- Dynamic content adjustment based on context
+- Professional terminology with clear explanations
+
+### Interaction Style
+- Maintains objectivity
+- Provides insightful analysis
+- Uses subtle wit when appropriate
+- Focuses on constructive engagement
+- Preserves conversational flow
+
+## Integration
+
+The agent is configured to work with X (Twitter), allowing for:
+- Real-time conversation analysis
+- Pattern detection in social media contexts
+- Neutral feedback in public discussions
+- Professional engagement with users
+
+## Best Practices
+
+When interacting with the LARP Detector Agent:
+
+1. Be clear and specific in queries
+2. Expect analytical responses
+3. Understand feedback is meant to be constructive
+4. Engage in good faith discussions
+5. Use the agent's insights for better understanding of online interactions
