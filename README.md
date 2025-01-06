@@ -14,9 +14,16 @@ An AI agent specialized in detecting and analyzing LARPing (Live Action Role-Pla
 
 After cloning the repository:
 
+### Build and Start the Server
 ```bash
 pnpm build
 pnpm start
+```
+
+### Start the Client
+In a separate terminal:
+```bash
+pnpm start:client
 ```
 
 ## Agent Capabilities
