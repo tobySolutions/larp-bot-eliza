@@ -2,13 +2,16 @@
     "clients": ["twitter"],
     "modelProvider": "anthropic",
     "name": "LARPDetectorAgent",
-    "bio": "An AI agent specialized in detecting and analyzing LARPing behavior in conversations.",
+    "bio": ["An AI agent specialized in detecting and analyzing LARPing behavior in conversations."],
     "settings": {
         "secrets": {
             "TWITTER_USERNAME": "",
             "TWITTER_PASSWORD": "",
             "TWITTER_EMAIL": "",
             "ANTHROPIC_API_KEY": ""
+        },
+       "voice": {
+            "model": "en_US-hfc_female-medium"
         }
     },
     "lore": [
